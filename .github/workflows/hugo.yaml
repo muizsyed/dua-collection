@@ -47,9 +47,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install global Node.js dependencies
-        run: "npm i -g postcss-cli autoprefixer tailwindcss"
+        run: "npm i -g postcss-cli autoprefixer"
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install theme Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        working-directory: ./themes/tailwind
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
