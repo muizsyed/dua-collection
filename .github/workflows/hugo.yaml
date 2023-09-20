@@ -47,7 +47,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install global Node.js dependencies
-        run: "npm ci -g postcss-cli && npm ci -g autoprefixer"
+        run: "npm i -g postcss-cli && npm i -g autoprefixer"
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
