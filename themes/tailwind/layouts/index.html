@@ -1,6 +1,27 @@
 {{ define "main" }}
-<article class="justify-self-center mx-auto text-center prose dark:prose-invert prose-slate lg:prose-lg">
-    <h1 class="font-serif font-extralight text-5xl welcome-headline">{{ .Title }}</h1>
-    {{ .Content }}
-</article>
+
+
+<div class="min-h-screen flex">
+    <nav class="w-56 flex-none ...">
+        {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }} {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+        <div class="tagbutton">
+            <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
+            <sup>{{$cnt}}</sup>
+        </div>
+        {{end}} {{end}}
+    </nav>
+
+    <main class="flex-1 min-w-0 overflow-auto ...">
+
+        {{ range (where .Site.RegularPages.ByTitle "Section" "duas" ) }}
+        <a href="{{ .Permalink }}" class="text-[#421962] block mb-2 p-6 bg-[#FFF3FF] border border-gray-100 rounded-sm shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">{{ .Title }}</h5>
+            <div>{{ .Description }}</div>
+            <div class="mt-6 font-normal text-2xl content-end items-end text-right">{{ .Content }}</div>
+        </a>
+        {{ end }}
+    </main>
+</div>
+
+
 {{ end }}
