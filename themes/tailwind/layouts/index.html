@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="flex-1 flex flex-col sm:flex-row">
-    <main class="flex-1 p-2">
+    <div class="flex-1 p-2">
         {{ range (where .Site.RegularPages.ByTitle "Section" "duas" ) }}
         <a href="{{ .Permalink }}" class="text-[#421962] block mb-2 p-6 bg-[#FFF3FF] border border-gray-100 rounded-sm shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h5 class="mb-2 text-2xl font-bold tracking-tight">{{ .Title }}</h5>
@@ -9,20 +9,18 @@
             <div class="mt-6 font-normal text-2xl content-end items-end text-right">{{ .Content }}</div>
         </a>
         {{ end }}
-    </main>
+    </div>
 
-    <nav class="order-first sm:w-56 p-2">
+    <aside class="order-first sm:w-56 p-2">
         {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }} {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
         <div class="tagbutton">
             <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
             <sup>{{$cnt}}</sup>
         </div>
         {{end}} {{end}}
-    </nav>
+    </aside>
 
 
 </div>
-
-
 
 {{ end }}
