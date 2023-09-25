@@ -1,6 +1,6 @@
 ---
 title: "For the deceased (janaza)"
-description: "O Allah, forgive our living and our dead, our present and our absent, our young and our old, our male and our female. Whosoever of us You keep alive, keep him alive upon Islam, and whosoever of us You cause to die, let him die upon Iman."
+description: "Oh Allah, forgive our living and our dead, those who are present and those who are absent, our young and our old, our males and our females. O Allah, whomever of us You cause to live, let him live in Islam, and whomever of us You cause to die, let him die in (a state of) faith. Oh Allah, do not deprive us of his reward, and do not let us go astray after him."
 categories:
     - Prayer
 tags:
@@ -8,4 +8,5 @@ tags:
     - janaza
 ---
 
-اللهُمَّ اغْفِرْ لِحَيِّنَا وَمَيِّتِنَا، وَشَاهِدِنَا وَغَائِبِنَا، وَصَغِيرِنَا وَكَبِيرِنَا، وَذَكَرِنَا وَأُنْثَانَا مَنْ أَحْيَيْتَهُ مِنَّا فَأَحْيِهِ عَلَى الْإِسْلَامِ، وَمَنْ تَوَفَّيْتَهُ مِنَّا فَتَوَفَّهُ عَلَى الْإِيمَانِ
+ اللَّهُمَّ اغْفِرْ لِحَيِّنَا وَمَيِّتِنَا وَشَاهِدِنَا وَغَائِبِنَا وَصَغِيرِنَا وَكَبِيرِنَا وَذَكَرِنَا وَأُنْثَانَا اللَّهُمَّ مَنْ أَحْيَيْتَهُ مِنَّا فَأَحْيِهِ عَلَى الإِسْلاَمِ وَمَنْ تَوَفَّيْتَهُ مِنَّا فَتَوَفَّهُ عَلَى الإِيمَانِ اللَّهُمَّ لاَ تَحْرِمْنَا أَجْرَهُ وَلاَ تُضِلَّنَا بَعْدَهُ 
+
